@@ -1,0 +1,26 @@
+'''
+Problem
+You have an N-element tuple or sequence that you would like to unpack into a collection
+of N variables.
+'''
+
+p = (4, 5)
+x, y = p
+print(x)
+# output = 4
+print(y)
+# output = 5
+data = [ 'ACME', 50, 91.1, (2012, 12, 21) ]
+name, shares, price, date = data
+print(name)
+print(date)
+# Output = (2012, 12, 21)
+name, shares, price, (year, mon, day) = data
+print(name)
+# Output = 'ACME'
+print(year)
+# Output = 2012
+print(mon)
+# Output = 12
+print(day)
+# Output = 21
