@@ -1,0 +1,23 @@
+'''
+Problem
+You need to unpack N elements from an iterable, but the iterable may be longer than N
+elements, causing a “too many values to unpack” exception.
+'''
+'''
+suppose you have user records that consist of a name and email
+address, followed by an arbitrary number of phone numbers. You could unpack the
+records like this:
+'''
+user_record = ('Dave', 'dave@example.com', '773-555-1212', '847-555-1212')
+name, email, *phone_numbers = user_record # phone_numbers is the "starred" assignment that can take multiple values as a List.
+print(name)
+# Output = 'Dave'
+print(email)
+# Output = 'dave@example.com'
+print(phone_numbers)
+# Output = ['773-555-1212', '847-555-1212']
+
+'''
+It’s worth noting that the phone_numbers variable will always be a list, regardless of how
+many phone numbers are unpacked (including none).
+'''
